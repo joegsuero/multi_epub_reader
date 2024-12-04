@@ -19,12 +19,6 @@ class MyErrorWidget extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: <Widget>[
-          const Text(
-            '😔',
-            style: TextStyle(
-              fontSize: 60.0,
-            ),
-          ),
           Container(
             margin: const EdgeInsets.only(bottom: 15.0),
             child: Text(

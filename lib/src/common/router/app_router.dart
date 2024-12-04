@@ -22,7 +22,12 @@ class AppRouter extends _$AppRouter {
           child: child,
         ),
         children: <AutoRoute>[
-          RedirectRoute(path: '', redirectTo: 'home-tab'),
+          RedirectRoute(path: '', redirectTo: 'main-tab'),
+          CupertinoRoute(
+            page: MainRoute.page,
+            path: 'main-tab',
+            children: [],
+          ),
           CupertinoRoute(
             page: HomeRoute.page,
             path: 'home-tab',

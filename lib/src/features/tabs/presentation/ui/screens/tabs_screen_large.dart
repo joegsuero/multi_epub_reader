@@ -12,6 +12,7 @@ class TabsScreenLarge extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     return AutoTabsRouter(
       routes: const [
+        MainRoute(),
         HomeRoute(),
         ExploreRoute(),
         SettingsRoute(),
@@ -40,6 +41,10 @@ class TabsScreenLarge extends ConsumerWidget {
                 indicatorColor:
                     context.theme.colorScheme.secondary.withOpacity(0.5),
                 destinations: const <NavigationRailDestination>[
+                  NavigationRailDestination(
+                    icon: Icon(Feather.home),
+                    label: Text('Main'),
+                  ),
                   NavigationRailDestination(
                     icon: Icon(Feather.home),
                     label: Text('Home'),

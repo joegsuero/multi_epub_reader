@@ -16,7 +16,8 @@ class MyApp extends ConsumerWidget {
       debugShowCheckedModeBanner: false,
       title: appName,
       theme: themeData(
-        currentAppTheme.value == CurrentAppTheme.dark ? darkTheme : lightTheme,
+        // currentAppTheme.value == CurrentAppTheme.dark ? darkTheme : lightTheme,
+        darkTheme,
       ),
       darkTheme: themeData(darkTheme),
       themeMode: currentAppTheme.value?.themeMode,

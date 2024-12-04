@@ -3,6 +3,7 @@ export 'downloads/downloads.dart';
 export 'explore/explore.dart';
 export 'favorites/favourites.dart';
 export 'home/home.dart';
+export 'main/main.dart';
 export 'settings/settings.dart';
 export 'splash/splash.dart';
 export 'tabs/tabs.dart';

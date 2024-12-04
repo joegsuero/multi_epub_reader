@@ -11,6 +11,7 @@ class TabsScreenSmall extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     return AutoTabsRouter(
       routes: const [
+        MainRoute(),
         HomeRoute(),
         ExploreRoute(),
         SettingsRoute(),
@@ -30,6 +31,10 @@ class TabsScreenSmall extends ConsumerWidget {
             elevation: 20,
             type: BottomNavigationBarType.fixed,
             items: const <BottomNavigationBarItem>[
+              BottomNavigationBarItem(
+                icon: Icon(Feather.download),
+                label: 'Downloads',
+              ),
               BottomNavigationBarItem(
                 icon: Icon(Feather.home),
                 label: 'Home',
